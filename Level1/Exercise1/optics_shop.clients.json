@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "698488d7617f98eafa5f5c1f"
+  },
+  "name": "Rompetechos TBO",
+  "telephone": "678921235",
+  "email": "email@email.com",
+  "registrationDate": {
+    "$date": "2023-09-25T00:00:00.000Z"
+  },
+  "recommendedBy": "Paula Cuatro-ojos",
+  "address_Client": {
+    "street": "Right Street",
+    "num": 123,
+    "floor": 2,
+    "door": "B",
+    "city": "Barcelona",
+    "zip": "08012",
+    "country": "Catalonia"
+  },
+  "glases_purchase": [
+    {
+      "brand": "Rayban",
+      "graduation": {
+        "graduationLeftEye": 2.3,
+        "graduationRightEye": 2
+      },
+      "frame": "metallic",
+      "frameColor": "silver",
+      "colorGlas": {
+        "colorLeftEye": "yellow",
+        "colorRightEye": "yellow"
+      },
+      "price": {
+        "$numberDecimal": "127.0"
+      },
+      "saleDate": {
+        "$date": "2023-09-25T00:00:00.000Z"
+      },
+      "employee": "Pepe Pérez"
+    }
+  ]
+}]
