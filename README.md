@@ -9,14 +9,18 @@ and document structure using MongoDB collections and documents.
 The repository is organized into three difficulty levels, each contained within its respective folder:
 
 ### Level1:
-Optical Store Management The first level models a database for an optical store named “Cul d'Ampolla”, aiming to digitize its customer and sales management system.
+Optical Store Management The first level models a database for an optical store named “optics_shop”, aiming to 
+digitize its customer and sales management system.
 
 Suppliers: Store detailed information including name, full address, phone, fax, and tax ID (NIF).
-Glasses: Track brand, lens prescription (left/right), frame type (floating, plastic, metal), frame color, lens color, and price.
+Glasses: Track brand, lens prescription (left/right), frame type, frame color, lens color, and price.
 Customers: Store name, address, phone, email, registration date, and optionally the referring customer.
-Sales: Record which employee sold each pair of glasses and the exact date/time of the sale. Two exercises explore database design from different perspectives:
-From the customer's point of view.
-From the product (glasses) point of view.
+Sales: Record which employee sold each pair of glasses and the exact date/time of the sale.
+The two exercises explore database design from different perspectives:
+Ex1: From the customer’s point of view. The supplier address is nested as an object due to its relatively 
+fixed nature, and the glasses sales are stored as an Array.
+Ex2: From the product (glasses_sold) point of view. Denormalization was chosen given the academic nature of 
+the exercise and the limited, predictable dimensions of the data volume.
 
 ### Level2:
 Online Food Ordering System The second level involves designing a database for a web-based food delivery platform.
@@ -27,22 +31,11 @@ Products: Include pizzas, burgers, and drinks, each with name, description, imag
 Stores: Each order is managed by a single store, which stores address and location data.
 Employees: Assigned to one store only, with roles such as cook or delivery person. For deliveries, the system tracks who delivered the order and when.
 
-### Level3:
-Simplified YouTube Platform The final level models a simplified version of YouTube.
-
-Users: Store email, password, username, birth date, gender, country, and postal code.
-Videos: Include title, description, file size, filename, duration, thumbnail, views, likes, dislikes, tags, and publication metadata.
-Channels: Users can create channels with a name, description, and creation date.
-Subscriptions: Users can subscribe to other users' channels.
-Reactions: Users can like or dislike a video once, with timestamp tracking.
-Playlists: Users can create public or private playlists with their favorite videos.
-Comments: Users can comment on videos, storing the text and timestamp of each comment.
-
 ## Technologies & Tools
 MongoDB
 MongoDB Compass
 mongosh
-JavaScript
+JavaScript and JSON documents (typing JSON script with VSC and Prettier extension)
 Git & GitHub
 
 ## Installation and Execution
