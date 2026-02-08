@@ -1,0 +1,165 @@
+{
+  "database": "food_delivery",
+  "collections": {
+    "clients": [
+      {
+        "_id": { "$oid": "69877b7f617f98eafa5f5ef4" },
+        "client_id": 1234,
+        "name": "True",
+        "surname": "Person",
+        "address": "Right Street 42b, 31",
+        "postal_code": "08001",
+        "city": "Barcelona",
+        "province": "Barcelona",
+        "phone_number": "62819321"
+      }
+    ],
+    
+    "stores": [
+      {
+        "_id": { "$oid": "69877bbc617f98eafa5f5ef7" },
+        "store_id": "S001",
+        "name": "Food for couch potatoes",
+        "address": "C/ Example, 123",
+        "postal_code": "08001",
+        "city": "Barcelona",
+        "province": "Barcelona"
+      }
+    ],
+    
+    "employees": [
+      {
+        "_id": { "$oid": "69877c21617f98eafa5f5efa" },
+        "employee_id": "E001",
+        "name": "Maria",
+        "surname": "Garcia",
+        "nif": "12345678A",
+        "role": ["delivery"],
+        "store_id": { "$oid": "69877bbc617f98eafa5f5ef7" },
+        "phone_number": "600112233"
+      }
+    ],
+    
+    "products": [
+      {
+        "_id": { "$oid": "69877d15617f98eafa5f5efd" },
+        "product_id": "P001",
+        "name": "Pizza Margarita",
+        "description": "Tomato, mozzarella, basil",
+        "image": "https://example.com/margarita.jpg",
+        "price": 8,
+        "category": "pizza",
+        "dough_options": ["Thin", "Normal", "Thick"]
+      },
+      {
+        "_id": { "$oid": "69877d15617f98eafa5f5efe" },
+        "product_id": "P002",
+        "name": "Pizza BBQ",
+        "description": "BBQ sauce, chicken, onions",
+        "image": "https://example.com/bbq.jpg",
+        "price": 12,
+        "category": "pizza",
+        "dough_options": ["Thin", "Normal", "Thick"]
+      },
+      {
+        "_id": { "$oid": "69877d15617f98eafa5f5eff" },
+        "product_id": "P003",
+        "name": "Cheese Hamburger",
+        "description": "Hamburger with extra cheese",
+        "image": "https://example.com/cheeseburger.jpg",
+        "price": 6,
+        "category": "hamburger"
+      },
+      {
+        "_id": { "$oid": "69877d15617f98eafa5f5f00" },
+        "product_id": "P004",
+        "name": "Double Hamburger",
+        "description": "Double meat hamburger",
+        "image": "https://example.com/double.jpg",
+        "price": 8,
+        "category": "hamburger"
+      },
+      {
+        "_id": { "$oid": "69877d15617f98eafa5f5f01" },
+        "product_id": "P005",
+        "name": "Water",
+        "description": "Bottled water 500ml",
+        "image": "https://example.com/water.jpg",
+        "price": 2,
+        "category": "drink"
+      },
+      {
+        "_id": { "$oid": "69877d15617f98eafa5f5f02" },
+        "product_id": "P006",
+        "name": "Coke",
+        "description": "Coca-Cola 33cl",
+        "image": "https://example.com/coke.jpg",
+        "price": 2.5,
+        "category": "drink"
+      }
+    ],
+    
+    "orders": [
+      {
+        "_id": { "$oid": "69877db1617f98eafa5f5f03" },
+        "order_id": "1234",
+        "client_id": { "$oid": "69877b7f617f98eafa5f5ef4" },
+        "store_id": { "$oid": "69877bbc617f98eafa5f5ef7" },
+        "datetime": "2023-10-05T14:30:00Z",
+        "type": "delivery",
+        "total_price": 61,
+        "status": {
+          "paid": true,
+          "delivered": true,
+          "delivered_at": "2023-10-05T15:45:00Z"
+        },
+        "delivery_info": {
+          "address": "Right Street 42b, 31",
+          "floor": "31",
+          "note": "Por favor, que la pizza esté bien hecha. No elevator!",
+          "delivery_employee_id": { "$oid": "69877c21617f98eafa5f5efa" }
+        },
+        "items": [
+          {
+            "product_id": { "$oid": "69877d15617f98eafa5f5efd" },
+            "name": "Pizza Margarita",
+            "dough": "Thin",
+            "quantity": 1,
+            "unit_price": 8
+          },
+          {
+            "product_id": { "$oid": "69877d15617f98eafa5f5efe" },
+            "name": "Pizza BBQ",
+            "dough": "Normal",
+            "quantity": 2,
+            "unit_price": 12
+          },
+          {
+            "product_id": { "$oid": "69877d15617f98eafa5f5eff" },
+            "name": "Cheese Hamburger",
+            "quantity": 2,
+            "unit_price": 6
+          },
+          {
+            "product_id": { "$oid": "69877d15617f98eafa5f5f00" },
+            "name": "Double Hamburger",
+            "quantity": 1,
+            "unit_price": 8
+          },
+          {
+            "product_id": { "$oid": "69877d15617f98eafa5f5f01" },
+            "name": "Water",
+            "quantity": 2,
+            "unit_price": 2
+          },
+          {
+            "product_id": { "$oid": "69877d15617f98eafa5f5f02" },
+            "name": "Coke",
+            "quantity": 2,
+            "unit_price": 2.5
+          }
+        ]
+      }
+    ]
+  }
+}

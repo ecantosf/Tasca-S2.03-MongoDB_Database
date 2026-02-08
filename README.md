@@ -25,11 +25,12 @@ the exercise and the limited, predictable dimensions of the data volume.
 ### Level2:
 Online Food Ordering System The second level involves designing a database for a web-based food delivery platform.
 
-Customers: Store full personal and contact details.
-Orders: Each order includes a timestamp, delivery or pickup type, product quantities, total price, and optional notes.
-Products: Include pizzas, burgers, and drinks, each with name, description, image, and price. Pizza categories may change over time.
-Stores: Each order is managed by a single store, which stores address and location data.
-Employees: Assigned to one store only, with roles such as cook or delivery person. For deliveries, the system tracks who delivered the order and when.
+Design Approach: I chose a normalized document structure with five distinct collections (clients, orders, products, 
+stores and employees)
+Rationale: This normalized design was selected for several key reasons: Data Consistency & Integrity, Scalability 
+& Maintenance, and More Dynamic.
+Trade-off Acknowledgment: This approach intentionally sacrifices some query speed compared to a fully denormalized, 
+single-collection design. 
 
 ## Technologies & Tools
 MongoDB

@@ -1,0 +1,211 @@
+{
+	"tables": {
+		"d1a65155-e231-4df2-a7e0-7735a2c0e7c6": {
+			"collation": "",
+			"desc": "",
+			"indexes": [
+				{
+					"name": "_id_",
+					"cols": [],
+					"id": "0abe7d8b-1196-4efa-87ff-408321bfda8e",
+					"mongodb": {
+						"fields": "{\n  \"_id\": 1\n}",
+						"options": ""
+					}
+				}
+			],
+			"relations": [],
+			"visible": true,
+			"afterScript": "",
+			"cols": [
+				{
+					"comment": "",
+					"pattern": false,
+					"data": "",
+					"datatype": "string",
+					"any": "",
+					"id": "7d211c4a-ae7d-4e5c-92cf-59abda95fad4",
+					"list": false,
+					"name": "_id",
+					"nn": true,
+					"param": "",
+					"pk": true,
+					"enum": "",
+					"estimatedSize": "",
+					"validation": "",
+					"fk": false
+				},
+				{
+					"comment": "",
+					"pattern": false,
+					"data": "",
+					"datatype": "string",
+					"any": "",
+					"id": "cb55a8cf-6d01-4f03-b386-4ede685440cc",
+					"list": false,
+					"name": "version",
+					"nn": true,
+					"param": "",
+					"pk": false,
+					"enum": "",
+					"estimatedSize": "",
+					"validation": "",
+					"fk": false
+				}
+			],
+			"embeddable": false,
+			"id": "d1a65155-e231-4df2-a7e0-7735a2c0e7c6",
+			"lines": [],
+			"name": "system.version",
+			"keys": [
+				{
+					"cols": [
+						{
+							"colid": "7d211c4a-ae7d-4e5c-92cf-59abda95fad4",
+							"id": "70c133f4-bf68-44cd-8513-1a0e09fa4331"
+						}
+					],
+					"id": "b07fe004-8cc3-41f5-9342-285310a214cc",
+					"isPk": true,
+					"name": "Primary key"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"estimatedSize": "",
+			"size": "",
+			"max": "",
+			"customCode": "",
+			"validationAction": "na",
+			"validationLevel": "na",
+			"others": "",
+			"validation": "",
+			"capped": false
+		}
+	},
+	"relations": {},
+	"notes": {},
+	"lines": {},
+	"model": {
+		"activeDiagram": "90397f7a-7d94-4551-a9d8-522670cfd860",
+		"desc": "",
+		"name": "Local MongoDB",
+		"id": "cc9a632e-8b0f-400b-af9d-b402c31de177",
+		"path": "",
+		"type": "MONGODB",
+		"appName": "MoonModeler",
+		"subType": "",
+		"version": 1,
+		"parentTableInFkCols": true,
+		"caseConvention": "under",
+		"replaceSpace": "_",
+		"color": "transparent",
+		"sideSelections": true,
+		"isDirty": true,
+		"storedin": {
+			"major": 12,
+			"minor": 0,
+			"extra": 0
+		},
+		"laststoredin": {
+			"major": 12,
+			"minor": 0,
+			"extra": 0
+		},
+		"def_collation": "",
+		"def_coltopk": true,
+		"def_others": "",
+		"lastSaved": "",
+		"writeFileParam": false,
+		"authorName": "",
+		"companyDetails": "",
+		"companyUrl": "",
+		"def_validationAction": "na",
+		"def_validationLevel": "na",
+		"connectionId": "dc63212f-b4d1-4b90-b318-ac3004d1fa2b",
+		"connectionVersion": "8.2.4"
+	},
+	"otherObjects": {},
+	"diagrams": {
+		"90397f7a-7d94-4551-a9d8-522670cfd860": {
+			"id": "90397f7a-7d94-4551-a9d8-522670cfd860",
+			"lineColor": "transparent",
+			"description": "",
+			"diagramItems": {
+				"d1a65155-e231-4df2-a7e0-7735a2c0e7c6": {
+					"x": 185,
+					"y": 149,
+					"gHeight": 63,
+					"gWidth": 181,
+					"background": "#03a9f4",
+					"color": "#ffffff",
+					"referencedItemId": "d1a65155-e231-4df2-a7e0-7735a2c0e7c6",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false,
+					"borderColor": "#666666",
+					"borderStyle": "none",
+					"borderWidth": 2,
+					"assetAspectRatio": "none",
+					"assetTextPosition": "right",
+					"assetShowText": true,
+					"areaHeaderDisplayed": true,
+					"areaHeaderColor": "transparent",
+					"areaHeaderBackground": "transparent",
+					"cardBackground": "transparent"
+				}
+			},
+			"diagramLinks": {},
+			"isOpen": true,
+			"main": true,
+			"name": "Main Diagram",
+			"keysgraphics": true,
+			"linegraphics": "detailed",
+			"zoom": 1,
+			"background": "transparent",
+			"scroll": {
+				"x": 0,
+				"y": 0
+			},
+			"type": "erd",
+			"showEstimatedSize": false,
+			"showSchemaContainer": false,
+			"showEmbeddedInParents": true,
+			"showCardinalityCaptions": false,
+			"showRelationshipNames": false,
+			"showLineCaptions": false,
+			"showDependencyCaptions": false,
+			"showColumns": true,
+			"showColumnDataTypes": true,
+			"showSampleData": false,
+			"showTableIndexes": false,
+			"showTableDescriptions": false,
+			"showRelations": true,
+			"showLines": true,
+			"showDependencies": true,
+			"showHorizontal": false,
+			"showDescriptions": true,
+			"showIndicators": false,
+			"showProgress": false,
+			"showIndicatorCaptions": false,
+			"backgroundImage": "na",
+			"descriptionsColor": "transparent",
+			"boxSize": "0",
+			"boxSpacing": "2",
+			"boxAlign": "center",
+			"lineWidth": "2",
+			"embeddedSpacing": "2",
+			"showLabels": true,
+			"showMainIcon": true,
+			"showCustomizations": false,
+			"showExportDimensions": false,
+			"showCompleted": true,
+			"showAnimations": false
+		}
+	},
+	"diagramsOrder": [],
+	"order": [],
+	"collapsedTreeItems": [],
+	"reverseStats": {}
+}
