@@ -30,7 +30,13 @@ stores and employees)
 Rationale: This normalized design was selected for several key reasons: Data Consistency & Integrity, Scalability 
 & Maintenance, and More Dynamic.
 Trade-off Acknowledgment: This approach intentionally sacrifices some query speed compared to a fully denormalized, 
-single-collection design. 
+single-collection design.
+
+Alternative Approach: Alternatively, a web-design-centric model has been created, featuring a simpler, fully 
+denormalized structure. This alternative prioritizes read performance and simplicity for web-based interactions, 
+consolidating related data into fewer collections or even a single collection to minimize joins and accelerate query 
+responses. While this streamlined approach enhances speed and reduces complexity for front-end operations, it accepts 
+trade-offs in data redundancy and update efficiency compared to the normalized design.
 
 ## Technologies & Tools
 MongoDB

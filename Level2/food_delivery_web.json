@@ -1,0 +1,65 @@
+{
+  "Orders": [
+    {
+      "order_id": "123",
+      "shop": {
+        "name": "Food for couch potatoes",
+        "url": "https://foodforcouchpotatoes.com"
+      },
+      "order_status": "confirmed",
+      "items": [
+        {
+          "name": "Pizza Margarita (Thin dough)",
+          "quantity": 1,
+          "unit_price": 8,
+          "item_total": 8
+        },
+        {
+          "name": "Pizza BBQ (Normal dough)",
+          "quantity": 2,
+          "unit_price": 12,
+          "item_total": 24
+        },
+        {
+          "name": "Cheese Hamburger",
+          "quantity": 2,
+          "unit_price": 6,
+          "item_total": 12
+        },
+        {
+          "name": "Double Hamburger",
+          "quantity": 1,
+          "unit_price": 8,
+          "item_total": 8
+        },
+        {
+          "name": "Water",
+          "quantity": 2,
+          "unit_price": 2,
+          "item_total": 4
+        },
+        {
+          "name": "Coke",
+          "quantity": 2,
+          "unit_price": 2.5,
+          "item_total": 5
+        }
+      ],
+      "total": 61,
+      "delivered": true,
+      "paid": true,
+      "client": {
+        "id": "1234",
+        "name": "Person, True"
+      },
+      "delivery_address": {
+        "street": "Right Street",
+        "number": "42b",
+        "floor": "31",
+        "contact_number": "62819321",
+        "note": "We don't have elevator!"
+      },
+      "delivery_note": "Delivery address information only appears for home delivery orders"
+    }
+  ]
+}
